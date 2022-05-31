@@ -1,13 +1,20 @@
 <ion-content>
   
-  <p>Homepcomponent</p>
-  <button (click)="toggleButton()" >togglen</button>
-  <div *ngIf="isConfirmed" >
+  <p>Wilkommen</p>
+
+  <button (click)="toggleButton()" >Klick mich !</button>
+  <br>
+  
+  <h1>hallo {{name}}</h1> <!--WARUM WIRD NAME NICHT GESPEICHTERT ???-->
+  <br>
+  <button (click)="askName()">Klick mich auch !</button>
+
+  <!--<div *ngIf="isConfirmed" >
     <p>Ich bin true !</p>
   </div>
 
   <div *ngIf="!isConfirmed">
     <p>Ich bin untrue !</p>
-  </div>
+  </div>-->
 
 </ion-content>
